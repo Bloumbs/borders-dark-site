@@ -1,0 +1,166 @@
+html,
+body {
+   margin: 0;
+   height: 100%;
+   padding: 0;
+   background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2 50%, #f2f2f2 50%, #f2f2f2);
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* background: #e9e9e9; */
+}
+
+canvas {
+   display: block;
+}
+
+/** Display Thin */
+@font-face {
+   font-family: "SF Display";
+   font-weight: 300;
+   src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
+}
+
+/** Text Light */
+@font-face {
+   font-family: "SF Text";
+   font-weight: 200;
+   src: url("https://sf.abarba.me/SF-UI-Text-Light.otf");
+}
+
+/** Mono Light */
+@font-face {
+   font-family: "SF Mono";
+   font-weight: 200;
+   src: url("https://sf.abarba.me/SFMono-Light.otf");
+}
+
+.center1 {
+   position: fixed;
+   margin: 0;
+   float: left;
+   width: 240px;
+   top: 50%;
+   left: 50%;
+   max-width: 250px;
+   z-index: 0;
+}
+
+.center2 {
+   position: absolute;
+   width: 240px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 250px;
+   z-index: 0;
+}
+
+.mono {
+   font-family: "SF Mono";
+   font-weight: 200;
+}
+
+.text {
+   font-family: "SF Text";
+   font-weight: 200;
+}
+
+.display {
+   font-family: "SF Display";
+   font-weight: 300;
+}
+
+.badge1 {
+   background-color: red;
+   border-radius: 55px;
+   color: white;
+   font-size: 52px;
+   height: 40px;
+   padding: 11px 18px 31px 22px;
+   text-align: left;
+   min-width: 8px;
+   float: left;
+   left: 186px;
+   top: 4.1em;
+   position: relative;
+   z-index: 1;
+   letter-spacing: 2px;
+}
+
+.badge2 {
+   background-color: red;
+   border-radius: 55px;
+   color: white;
+   font-size: 55px;
+   height: 40px;
+   padding: 10px 24px 35px 26px;
+   text-align: right;
+   float: right;
+   /* right: 0; */
+   /* width: 2.1em; */
+   min-width: 8px;
+   top: 50%;
+   right: 50%;
+   margin-top: -154px;
+   margin-right: -153px;
+   position: relative;
+   z-index: 1;
+   letter-spacing: 2px;
+}
+
+.square {
+   background-color: yellowgreen;
+   width: 100%;
+   height: 100%;
+}
+
+.icon2 {
+   width: 80vh;
+}
+
+.downloads {
+   position: relative;
+   margin-right: 19.6em;
+   font-size: 30px;
+   z-index: 0;
+   top: 30px;
+   float: right;
+}
+
+.version {
+   position: relative;
+   margin-left: 18.3em;
+   font-size: 30px;
+   z-index: 0;
+   top: 30px;
+}
+
+.none {
+   display: none;
+}
+
+.rotate {
+   position: relative;
+   -webkit-animation: spin 5s linear infinite;
+   -moz-animation: spin 5s linear infinite;
+   animation: spin 5s linear infinite;
+}
+
+@-moz-keyframes spin {
+   100% {
+      -moz-transform: rotate(360deg);
+   }
+}
+
+@-webkit-keyframes spin {
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
+}
+
+@keyframes spin {
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
