@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Bloumbs/borders-ios-badge/gh-pages/images/ios-badge.gif" width="900">
+<img src="https://github.com/Bloumbs/borders-ios-dark/blob/gh-pages/images/ios-badge.gif" width="900">
 
 # borders-ios-badge
 
