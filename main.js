@@ -10,7 +10,6 @@ window.onload = function () {
 
 function scrape() {
    axios.get(url).then((response) => {
-      console.log("SCRAPE STARTED....")
       const $ = cheerio.load(response.data)
 
       let downloads = $('.ux-item-rating .downloads-text').html($.downloadsText)
@@ -25,7 +24,6 @@ function main() {
    var nf = new Intl.NumberFormat()
    var downloadCount = intDown
 
-   console.log("BEFORE SCRAPE:", intDown)
    const badge = document.getElementById("badge");
    var i = 1;
 
@@ -36,7 +34,6 @@ function main() {
             i++
             count()
          } else {
-            console.log("AFTER SCRAPE:", intDown)
             setTimeout(function () {
                badge.style.textAlign = "center"
                badge.innerText = "1.7.0"
