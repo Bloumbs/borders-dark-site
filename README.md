@@ -2,4 +2,4 @@
 
 # borders-ios-badge
 
-Just a super simple gh-pages site that redirects to my VSCode theme [Borders Dark](https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark)
+gh-pages site that redirects to my VSCode theme [Borders Dark](https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark)
