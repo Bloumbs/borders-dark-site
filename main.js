@@ -10,7 +10,7 @@ window.onload = function () {
 
 function scrape() {
     axios.get(url).then((response) => {
-        console.log("scrape started");
+        console.log("Getting Borders Dark info...");
         const $ = cheerio.load(response.data);
 
         let installs = $('.ux-item-rating .installs-text').html($.installsText);
@@ -25,7 +25,7 @@ function main() {
     let nf = new Intl.NumberFormat();
     let install_count = int_installs;
 
-    console.log("before scrape:", int_installs);
+    console.log("Installs:", int_installs);
     const badge = document.getElementById("badge");
     let i = 1;
 
@@ -36,10 +36,10 @@ function main() {
                 i++;
                 count();
             } else {
-                console.log("after scrape:", int_installs);
                 setTimeout(function () {
                     badge.style.textAlign = "center";
                     badge.innerText = "1.7.0";
+                    console.log("Version: 1.7.0");
                 }, 1000);
             }
         }, 0);
