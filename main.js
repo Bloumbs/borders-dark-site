@@ -1,7 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const url = "https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark"
-
 let int_installs = 0;
 
 window.onload = function () {
@@ -27,23 +26,8 @@ function main() {
 
     console.log("Installs:", int_installs);
     const badge = document.getElementById("version");
-    //badge.style.textAlign = "left";
-    let i = 1;
-
-    function count() {
-        setTimeout(function () {
-            if (i < install_count + 1) {
-                badge.innerText = nf.format(i);
-                i += 3;
-                count();
-            } else {
-                badge.innerText = `${nf.format(i)} Installs`;
-                setTimeout(function () {
-                    //badge.style.textAlign = "center";
-                    badge.innerText = "v1.7.0";
-                }, 1500);
-            }
-        }, 0);
-    }
-    count();
+    badge.innerText = `${nf.format(install_count)} Installs`;
+    setTimeout(function () {
+        badge.innerText = "v1.7.0";
+    }, 2000);
 }
