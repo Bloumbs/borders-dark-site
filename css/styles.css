@@ -58,7 +58,7 @@ canvas {
    transform: translate(-50%, -50%);
    max-width: 800px;
    z-index: -1;
-   filter: drop-shadow(0 0 35rem #272829);
+   filter: drop-shadow(0 0 8rem #272829);
    margin-top: 5px;
 }
 
