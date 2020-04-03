@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/wireframe.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>iOS Badge</title>
+    <title>Borders Dark</title>
     <script src="bundle.js"></script>
 </head>
-
 <body>
-    <span id="badge" class="badge2 text">0</span>
-    <div class="icon2 ">
-        <a href="https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark" target="_blank"><img
-            src="./images/thicker-ios-borders.png" alt="ios2" class="center2" style="cursor: pointer;" /></a>
+    <div class="box">
+        <div class="nav">
+            <a href="#">home</a>
+            <a href="https://github.com/Bloumbs/borders-dark-site">github</a>
+        </div>
+        <div class="title_box">
+            <a><img
+                src="images/wireframe-white.png" alt="wire" class="wireframe"/></a>
+            <h1 id="title">Borders Dark</h1>
+            <p id="slogan" class="sf_text">Just more borders dude.</p>
+            <p id="version" class="sf_text">1.7.0</p>
+        </div>
+            <!--<a><img-->
+                <!--src="images/wireframe-transparent.png" alt="wire" class="wireframe"/></a>-->
+        <div class="center">
+            <a href="https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark" target="_blank"><img
+                src="https://raw.githubusercontent.com/Bloumbs/Borders-Dark/master/images/borders-different-syntax.png" alt="ios2" class="slides"/></a>
+            <a href="https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark" target="_blank"><img
+                src="https://raw.githubusercontent.com/Bloumbs/Borders-Dark/master/images/borders-dark-combo.png" alt="ios2" class="slides"/></a>
+            <a href="https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark" target="_blank"><img
+                src="https://raw.githubusercontent.com/Bloumbs/Borders-Dark/master/images/borders-darker-combo.png" alt="ios2" class="slides"/></a>
+            <a href="https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark" target="_blank"><img
+                src="https://raw.githubusercontent.com/Bloumbs/Borders-Dark/master/images/borders-blue-combo.png" alt="ios2" class="slides"/></a>
+            <!--<a><img-->
+                <!--src="images/wireframe-transparent.png" alt="wire" class="wireframe"/></a>-->
+            <!--<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>-->
+            <!--<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>-->
+        </div>
     </div>
-</body>
+<script>
+  let slideIndex = 0;
+  carousel();
 
+  function carousel() {
+      let i;
+      let x = document.getElementsByClassName("slides");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 4000);
+  }
+</script>
+</body>
 </html>
