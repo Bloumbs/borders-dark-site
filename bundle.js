@@ -6474,7 +6474,6 @@ function hasOwnProperty(obj, prop) {
 const axios = require('axios');
 const cheerio = require('cheerio');
 const url = "https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark"
-
 let int_installs = 0;
 
 window.onload = function () {
@@ -6503,7 +6502,7 @@ function main() {
     badge.innerText = `${nf.format(install_count)} Installs`;
     setTimeout(function () {
         badge.innerText = "v1.7.0";
-    }, 3500);
+    }, 1500);
 }
 
 },{"axios":34,"cheerio":60}],34:[function(require,module,exports){

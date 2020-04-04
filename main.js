@@ -29,5 +29,5 @@ function main() {
     badge.innerText = `${nf.format(install_count)} Installs`;
     setTimeout(function () {
         badge.innerText = "v1.7.0";
-    }, 2000);
+    }, 1500);
 }
