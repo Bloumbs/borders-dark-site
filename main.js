@@ -1,33 +1,25 @@
-const axios = require('axios');
 const cheerio = require('cheerio');
+const fetch = require('node-fetch');
 const url = "https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark"
-let int_installs = 0;
 
 window.onload = function () {
     scrape();
 };
 
 function scrape() {
-    axios.get(url).then((response) => {
-        console.log("Getting Borders Dark v1.7.0 info...");
-        const $ = cheerio.load(response.data);
+    fetch(url)
+        .then(res => res.text())
+        .then((body) => {
+            const $ = cheerio.load(body);
+            let installs = parseInt($('span.installs-text').text().split(' ')[1].replace(',', ''));
+            let nf = new Intl.NumberFormat();
+            let nf_installs = nf.format(installs);
 
-        let installs = $('.ux-item-rating .installs-text').html($.installsText);
-        let install_num = String(installs.split(" ")[1]).replace(',', '');
-        int_installs = parseInt(install_num);
-
-        main();
-    })
-}
-
-function main() {
-    let nf = new Intl.NumberFormat();
-    let install_count = int_installs;
-
-    console.log("Installs:", int_installs);
-    const badge = document.getElementById("version");
-    badge.innerText = `${nf.format(install_count)} Installs`;
-    setTimeout(function () {
-        badge.innerText = "v1.7.0";
-    }, 1500);
-}
+            const badge = document.getElementById("version");
+            badge.innerText = `${nf_installs} Installs`;
+            console.log(`Borders Dark v1.7.0\n${nf_installs} Installs.`);
+            setTimeout(function () {
+                badge.innerText = "v1.7.0";
+            }, 1500);
+        });
+};

@@ -1,17 +1,27 @@
 {
-    "name": "ios-badge",
-    "version": "1.0.0",
-    "description": "Just a super simple gh-pages site that redirects to my VSCode theme Borders Dark",
-    "main": "main.js",
-    "scripts": {},
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "axios": "^0.19.0",
-        "cheerio": "^1.0.0-rc.3"
-    },
-    "devDependencies": {
-        "browserify": "^16.2.3"
-    }
+  "name": "borders-dark-site",
+  "version": "1.0.0",
+  "description": "gh-pages site that redirects to my VSCode theme [Borders Dark](https://marketplace.visualstudio.com/items?itemName=bloumbs.borders-dark)",
+  "main": "main.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloumbs/borders-dark-site.git"
+  },
+  "keywords": [],
+  "author": "Bloumbs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bloumbs/borders-dark-site/issues"
+  },
+  "homepage": "https://github.com/Bloumbs/borders-dark-site#readme"
 }
