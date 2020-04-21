@@ -4,7 +4,7 @@ gh-pages site that redirects to my VSCode theme [Borders Dark](https://marketpla
 
 <img src="https://github.com/Bloumbs/borders-dark-site/blob/gh-pages/images/full-page.gif" width="900">
 
-Previous site:
+old site:
 
 <img src="https://github.com/Bloumbs/borders-dark-site/blob/gh-pages/images/ios-badge.gif" width="900">
 
