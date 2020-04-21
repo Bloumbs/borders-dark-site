@@ -65,10 +65,11 @@ canvas {
 }
 
 .wireframe {
+    /*display: none;*/
     position: absolute;
     width: 120px;
     top: 3.3em;
-    left: 46%;
+    left: 50%;
     transform: translate(-50%, -50%);
     opacity: .08;
     z-index: -1;
@@ -158,7 +159,7 @@ canvas {
     top: 43px;
     font-style: italic;
     width: 300px;
-    /*left: 0;*/
+    left: 20px;
     /*transform: translate(-50%, -50%);*/
 }
 
