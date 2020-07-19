@@ -15,7 +15,7 @@ function scrape() {
             let nf = new Intl.NumberFormat();
             let nf_installs = nf.format(installs);
 
-            const badge = document.getElementById("version");
+            let badge = document.getElementById("version");
             badge.innerText = `${nf_installs} Installs`;
             console.log(`Borders Dark v1.7.0\n${nf_installs} Installs.`);
             setTimeout(function () {
